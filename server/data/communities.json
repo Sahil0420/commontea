@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Mechanical Engineering",
+    "description": "A community for mechanical engineers to discuss thermodynamics, fluid mechanics, and machine design. Share projects and insights into the world of mechanical engineering!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Mechanical-Engineering.jpg"
+  },
+  {
+    "name": "Civil Engineering",
+    "description": "A community for civil engineers to explore topics like structural design, construction management, and geotechnical engineering. Connect with peers and share knowledge!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Civil-Engineering.jpg"
+  },
+  {
+    "name": "Electrical Engineering",
+    "description": "A community for electrical engineers to discuss circuits, power systems, and electronics. Share expertise and learn from others in the field of electrical engineering!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Electrical-Engineering.jpg"
+  },
+  {
+    "name": "Computer Science and Engineering",
+    "description": "A community for computer science enthusiasts to discuss algorithms, programming, and software development. From AI to cybersecurity, this community has it all!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Computer-Science.jpg"
+  },
+  {
+    "name": "Chemical Engineering",
+    "description": "A community for chemical engineers to explore topics like process design, reaction engineering, and material science. Share knowledge and connect with others in the field!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Chemical-Engineering.jpg"
+  },
+  {
+    "name": "Biomedical Engineering",
+    "description": "A community for biomedical engineers to discuss medical devices, bioinformatics, and healthcare innovations. Collaborate and share ideas to advance the field!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Biomedical-Engineering.jpg"
+  },
+  {
+    "name": "Medicine and Surgery",
+    "description": "A community for medical students and professionals to discuss anatomy, surgery, and clinical practices. Share resources and insights into the world of medicine!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Medicine.jpg"
+  },
+  {
+    "name": "Pharmacy",
+    "description": "A community for pharmacists and pharmacy students to discuss drug development, pharmacology, and patient care. Share expertise and learn from others in the field!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Pharmacy.jpg"
+  },
+  {
+    "name": "Aerospace Engineering",
+    "description": "A community for aerospace engineers to discuss aerodynamics, propulsion systems, and spacecraft design. Share your passion for aviation and space exploration!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Aerospace-Engineering.jpg"
+  },
+  {
+    "name": "Environmental Engineering",
+    "description": "A community for environmental engineers to explore topics like sustainability, water treatment, and pollution control. Collaborate to create a greener future!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Environmental-Engineering.jpg"
+  },
+  {
+    "name": "Data Science",
+    "description": "A community for data scientists to discuss machine learning, data visualization, and big data analytics. Share projects and insights into the world of data science!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Data-Science.jpg"
+  },
+  {
+    "name": "Artificial Intelligence",
+    "description": "A community for AI enthusiasts to discuss neural networks, natural language processing, and robotics. Share knowledge and explore the future of AI!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Artificial-Intelligence.jpg"
+  },
+  {
+    "name": "Robotics",
+    "description": "A community for robotics enthusiasts to discuss automation, control systems, and robot design. Share projects and learn from others in the field!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Robotics.jpg"
+  },
+  {
+    "name": "Astronomy and Astrophysics",
+    "description": "A community for astronomy enthusiasts to discuss celestial objects, space exploration, and cosmology. Share your passion for the universe!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Astronomy.jpg"
+  },
+  {
+    "name": "Nursing",
+    "description": "A community for nursing students and professionals to discuss patient care, clinical practices, and healthcare innovations. Share resources and insights!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Nursing.jpg"
+  },
+  {
+    "name": "Dentistry",
+    "description": "A community for dental students and professionals to discuss oral health, dental procedures, and patient care. Share knowledge and connect with peers!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Dentistry.jpg"
+  },
+  {
+    "name": "Psychology",
+    "description": "A community for psychology students and professionals to discuss mental health, therapy techniques, and research. Share insights and learn from others!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Psychology.jpg"
+  },
+  {
+    "name": "Law",
+    "description": "A community for law students and professionals to discuss legal cases, policies, and career advice. Share knowledge and connect with others in the legal field!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Law.jpg"
+  },
+  {
+    "name": "Architecture",
+    "description": "A community for architects and students to discuss building design, urban planning, and sustainable architecture. Share projects and ideas!",
+    "banner": "https://raw.githubusercontent.com/Sahil0420/public-files/main/Architecture.jpg"
+  }
+]
