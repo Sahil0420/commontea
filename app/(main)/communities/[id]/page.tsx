@@ -10,7 +10,7 @@ export default function CommunityPage({ params }: { params: { id: string } }) {
       <p className="mb-4">
         This is the page for {communityName}. Here you can view and interact with community content.
       </p>
-      <Button>Join Community</Button>
+      <Button>Join Commonity</Button>
     </div>
   )
 }
