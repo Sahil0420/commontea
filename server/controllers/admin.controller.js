@@ -12,6 +12,7 @@ const User = require("../models/user.model");
 /**
  * @route GET /admin/logs
  */
+
 const retrieveLogInfo = async (req, res) => {
   try {
     // Only sign in logs contain encrypted context data & email
@@ -75,9 +76,10 @@ const retrieveLogInfo = async (req, res) => {
   }
 };
 
-/**
+/*
  * @route DELETE /admin/logs
- */
+*/
+
 const deleteLogInfo = async (req, res) => {
   try {
     await Log.deleteMany({});
@@ -89,7 +91,8 @@ const deleteLogInfo = async (req, res) => {
 
 /**
  * @route POST /admin/signin
- */
+*/
+
 const signin = async (req, res) => {
   try {
     const { username, password } = req.body;
@@ -147,6 +150,7 @@ const signin = async (req, res) => {
 /**
  * @route GET /admin/preferences
  */
+
 const retrieveServicePreference = async (req, res) => {
   try {
     const config = await Config.findOne({});
@@ -166,6 +170,7 @@ const retrieveServicePreference = async (req, res) => {
 /**
  * @route PUT /admin/preferences
  */
+
 const updateServicePreference = async (req, res) => {
   try {
     const {

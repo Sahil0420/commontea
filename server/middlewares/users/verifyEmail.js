@@ -4,6 +4,7 @@ const User = require("../../models/user.model");
 const EmailVerification = require("../../models/email.model");
 const { query, validationResult } = require("express-validator");
 const { verifyEmailHTML } = require("../../utils/emailTemplates");
+require("dotenv").config();
 
 const CLIENT_URL = process.env.CLIENT_URL;
 const EMAIL_SERVICE = process.env.EMAIL_SERVICE;
@@ -28,6 +29,9 @@ const sendVerificationEmail = async (req, res) => {
   const verificationCode = Math.floor(10000 + Math.random() * 90000);
   const verificationLink = `${CLIENT_URL}/auth/verify?code=${verificationCode}&email=${email}`;
 
+  console.log("CLIENT_URL:", CLIENT_URL);
+  console.log("Verification Link:", verificationLink);
+  
   try {
     let transporter = nodemailer.createTransport({
       service: EMAIL_SERVICE,
@@ -38,7 +42,7 @@ const sendVerificationEmail = async (req, res) => {
     });
 
     let info = await transporter.sendMail({
-      from: `"SocialEcho" <${USER}>`,
+      from: `"CommonTea" <${USER}>`,
       to: email,
       subject: "Verify your email address",
       html: verifyEmailHTML(name, verificationLink, verificationCode),
