@@ -1,52 +1,192 @@
 [
   {
-    "name": "Health and Fitness",
-    "description": "A community for fitness fanatics and health gurus to share tips and advice on healthy living, exercise, and nutrition. Whether you're a seasoned athlete or just starting out, this community has something for everyone!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Health-and-Fitness.jpg"
+    "name": "Mechanical Engineering",
+    "description": "A community for mechanical engineers to discuss thermodynamics, fluid mechanics, and machine design. Share projects and insights into the world of mechanical engineering!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Mechanical-Engineering.jpg"
   },
   {
-    "name": "Travel",
-    "description": "A community for travel junkies to share their experiences, tips, and recommendations for destinations around the world. From backpacking to luxury travel, this community has all the inspiration you need to plan your next adventure!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Travel.jpg"
+    "name": "Civil Engineering",
+    "description": "A community for civil engineers to explore topics like structural design, construction management, and geotechnical engineering. Connect with peers and share knowledge!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Civil-Engineering.jpg"
   },
   {
-    "name": "Food and Cooking",
-    "description": "A community for foodies and home cooks to share recipes, cooking tips, and food-related news and events. From gourmet cuisine to comfort food, this community has all the ingredients for a delicious conversation!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Food-and-Cooking.jpg"
+    "name": "Electrical Engineering",
+    "description": "A community for electrical engineers to discuss circuits, power systems, and electronics. Share expertise and learn from others in the field of electrical engineering!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Electrical-Engineering.jpg"
   },
   {
-    "name": "Music",
-    "description": "A community for music lovers to discuss their favorite genres, artists, and concerts. From classical to hip hop, this community has all the beats you need to get your groove on!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Music.jpg"
+    "name": "Computer Science and Engineering",
+    "description": "A community for computer science enthusiasts to discuss algorithms, programming, and software development. From AI to cybersecurity, this community has it all!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Computer-Science.jpg"
   },
   {
-    "name": "Sports",
-    "description": "A community for sports fans to discuss the latest news, events, and teams. From football to basketball, this community has all the action you need to stay up-to-date on your favorite sports!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Sports.jpg"
+    "name": "Chemical Engineering",
+    "description": "A community for chemical engineers to explore topics like process design, reaction engineering, and material science. Share knowledge and connect with others in the field!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Chemical-Engineering.jpg"
   },
   {
-    "name": "Fashion",
-    "description": "A community for fashionistas to share their tips, trends, and styles. From haute couture to streetwear, this community has all the fashion-forward ideas you need to stay on top of your game!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Fashion.jpg"
+    "name": "Biomedical Engineering",
+    "description": "A community for biomedical engineers to discuss medical devices, bioinformatics, and healthcare innovations. Collaborate and share ideas to advance the field!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Biomedical-Engineering.jpg"
   },
   {
-    "name": "Art and Design",
-    "description": "A community for artists and designers to share their work, tips, and inspiration. From painting to graphic design, this community has all the creativity you need to fuel your passion!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Art-and-Design.jpg"
+    "name": "Medicine and Surgery",
+    "description": "A community for medical students and professionals to discuss anatomy, surgery, and clinical practices. Share resources and insights into the world of medicine!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Medicine.jpg"
   },
   {
-    "name": "Business and Entrepreneurship",
-    "description": "A community for business-minded individuals to discuss the latest news, strategies, and entrepreneurship. From startups to established companies, this community has all the insights you need to succeed in the business world!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Business-and-Entrepreneurship.png"
+    "name": "Pharmacy",
+    "description": "A community for pharmacists and pharmacy students to discuss drug development, pharmacology, and patient care. Share expertise and learn from others in the field!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Pharmacy.jpg"
   },
   {
-    "name": "Education",
-    "description": "A community for educators and students to share educational resources, tips, and advice. From K-12 to higher education, this community has all the knowledge you need to excel in your studies!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Education.jpg"
+    "name": "Aerospace Engineering",
+    "description": "A community for aerospace engineers to discuss aerodynamics, propulsion systems, and spacecraft design. Share your passion for aviation and space exploration!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Aerospace-Engineering.jpg"
   },
   {
-    "name": "Programming",
-    "description": "A community for programmers to discuss programming languages, frameworks, and software development. From web development to mobile apps, this community has all the code you need to build your next project!",
-    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Programming.jpg"
+    "name": "Environmental Engineering",
+    "description": "A community for environmental engineers to explore topics like sustainability, water treatment, and pollution control. Collaborate to create a greener future!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Environmental-Engineering.jpg"
+  },
+  {
+    "name": "Data Science",
+    "description": "A community for data scientists to discuss machine learning, data visualization, and big data analytics. Share projects and insights into the world of data science!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Data-Science.jpg"
+  },
+  {
+    "name": "Artificial Intelligence",
+    "description": "A community for AI enthusiasts to discuss neural networks, natural language processing, and robotics. Share knowledge and explore the future of AI!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Artificial-Intelligence.jpg"
+  },
+  {
+    "name": "Robotics",
+    "description": "A community for robotics enthusiasts to discuss automation, control systems, and robot design. Share projects and learn from others in the field!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Robotics.jpg"
+  },
+  {
+    "name": "Astronomy and Astrophysics",
+    "description": "A community for astronomy enthusiasts to discuss celestial objects, space exploration, and cosmology. Share your passion for the universe!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Astronomy.jpg"
+  },
+  {
+    "name": "Nursing",
+    "description": "A community for nursing students and professionals to discuss patient care, clinical practices, and healthcare innovations. Share resources and insights!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Nursing.jpg"
+  },
+  {
+    "name": "Dentistry",
+    "description": "A community for dental students and professionals to discuss oral health, dental procedures, and patient care. Share knowledge and connect with peers!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Dentistry.jpg"
+  },
+  {
+    "name": "Psychology",
+    "description": "A community for psychology students and professionals to discuss mental health, therapy techniques, and research. Share insights and learn from others!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Psychology.jpg"
+  },
+  {
+    "name": "Law",
+    "description": "A community for law students and professionals to discuss legal cases, policies, and career advice. Share knowledge and connect with others in the legal field!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Law.jpg"
+  },
+  {
+    "name": "Architecture",
+    "description": "A community for architects and students to discuss building design, urban planning, and sustainable architecture. Share projects and ideas!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Architecture.jpg"
+  },
+  {
+    "name": "Economics",
+    "description": "A community for economics students and professionals to discuss market trends, policies, and theories. Share insights and learn from others in the field!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Economics.jpg"
+  },
+  {
+    "name": "Physics",
+    "description": "A community for physics enthusiasts to discuss quantum mechanics, relativity, and experimental physics. Share knowledge and explore the universe!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Physics.jpg"
+  },
+  {
+    "name": "Mathematics",
+    "description": "A community for math enthusiasts to discuss algebra, calculus, and number theory. Share problems, solutions, and insights into the world of mathematics!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Mathematics.jpg"
+  },
+  {
+    "name": "Geology",
+    "description": "A community for geologists to discuss earth sciences, mineralogy, and natural resources. Share knowledge and explore the wonders of our planet!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Geology.jpg"
+  },
+  {
+    "name": "Biotechnology",
+    "description": "A community for biotech enthusiasts to discuss genetic engineering, bioinformatics, and pharmaceutical research. Share ideas and innovations!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Biotechnology.jpg"
+  },
+  {
+    "name": "Veterinary Medicine",
+    "description": "A community for veterinary students and professionals to discuss animal health, surgery, and care. Share resources and connect with peers!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Veterinary-Medicine.jpg"
+  },
+  {
+    "name": "Agricultural Engineering",
+    "description": "A community for agricultural engineers to discuss farming technologies, irrigation systems, and sustainable agriculture. Share knowledge and innovations!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Agricultural-Engineering.jpg"
+  },
+  {
+    "name": "Marine Biology",
+    "description": "A community for marine biologists to discuss ocean ecosystems, marine species, and conservation. Share research and explore the underwater world!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Marine-Biology.jpg"
+  },
+  {
+    "name": "Health Informatics",
+    "description": "A community for health informatics professionals to discuss electronic health records, data analytics, and healthcare IT. Share insights and innovations!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Health-Informatics.jpg"
+  },
+  {
+    "name": "Renewable Energy",
+    "description": "A community for renewable energy enthusiasts to discuss solar, wind, and hydroelectric power. Share projects and ideas for a sustainable future!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Renewable-Energy.jpg"
+  },
+  {
+    "name": "Forensic Science",
+    "description": "A community for forensic scientists to discuss crime scene investigation, DNA analysis, and legal forensics. Share knowledge and connect with peers!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Forensic-Science.jpg"
+  },
+  {
+    "name": "Public Health",
+    "description": "A community for public health professionals to discuss epidemiology, health policies, and community health initiatives. Share insights and resources!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Public-Health.jpg"
+  },
+  {
+    "name": "Optometry",
+    "description": "A community for optometrists and students to discuss eye care, vision correction, and patient management. Share knowledge and connect with peers!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Optometry.jpg"
+  },
+  {
+    "name": "Anthropology",
+    "description": "A community for anthropologists to discuss human evolution, cultural studies, and archaeology. Share research and insights into human history!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Anthropology.jpg"
+  },
+  {
+    "name": "Zoology",
+    "description": "A community for zoologists to discuss animal behavior, taxonomy, and conservation. Share research and explore the animal kingdom!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Zoology.jpg"
+  },
+  {
+    "name": "Social Work",
+    "description": "A community for social workers to discuss community development, mental health, and social justice. Share resources and connect with peers!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Social-Work.jpg"
+  },
+  {
+    "name": "Linguistics",
+    "description": "A community for linguists to discuss language structure, phonetics, and sociolinguistics. Share research and explore the world of languages!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Linguistics.jpg"
+  },
+  {
+    "name": "History",
+    "description": "A community for history enthusiasts to discuss historical events, archaeology, and cultural heritage. Share knowledge and explore the past!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/History.jpg"
+  },
+  {
+    "name": "Education Technology",
+    "description": "A community for educators and technologists to discuss e-learning, digital tools, and innovations in education. Share ideas and resources!",
+    "banner": "https://raw.githubusercontent.com/nz-m/public-files/main/banners/Education-Technology.jpg"
   }
 ]

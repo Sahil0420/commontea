@@ -189,3 +189,37 @@ export const removeModeratorAction =
       });
     }
   };
+
+export const addCommunityAction = (communityData) => async (dispatch) => {
+  try {
+    const { error } = await api.addCommunity(communityData);
+    if (error) {
+      throw new Error(error);
+    }
+    dispatch({
+      type: types.ADD_COMMUNITY_SUCCESS,
+    });
+  } catch (error) {
+    dispatch({
+      type: types.ADD_COMMUNITY_FAIL,
+      payload: error.message,
+    });
+  }
+};
+
+export const deleteCommunityAction = (communityId) => async (dispatch) => {
+  try {
+    const { error } = await api.deleteCommunity(communityId);
+    if (error) {
+      throw new Error(error);
+    }
+    dispatch({
+      type: types.DELETE_COMMUNITY_SUCCESS,
+    });
+  } catch (error) {
+    dispatch({
+      type: types.DELETE_COMMUNITY_FAIL,
+      payload: error.message,
+    });
+  }
+};
