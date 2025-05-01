@@ -59,17 +59,17 @@ const Settings = () => {
   };
 
   if (isLoading || !servicePreferences) {
-    return <div>Loading...</div>;
+    return <div className="text-dark-text">Loading...</div>;
   }
 
   return (
-    <div className="p-5 w-full border rounded-md bg-white mt-3">
-      <h2 className="font-semibold mb-4 border-b pb-2 text-center text-gray-700">
+    <div className="p-5 w-full border border-dark-card rounded-md bg-dark-background mt-3 text-dark-text">
+      <h2 className="font-semibold mb-4 border-b border-dark-card pb-2 text-center text-dark-accent">
         Service Preferences
       </h2>
 
       {isSuccess && (
-        <div className="bg-green-100 text-green-800 p-2 mb-4 rounded">
+        <div className="bg-green-800 text-green-100 p-2 mb-4 rounded">
           Service Preferences updated successfully!
         </div>
       )}
@@ -78,7 +78,7 @@ const Settings = () => {
         <div>Use Perspective API for content moderation</div>
         <div className="ml-auto">
           <input
-            className="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            className="w-5 h-5 text-dark-card bg-dark-card rounded focus:ring-dark-accent focus:border-dark-accent"
             type="checkbox"
             checked={usePerspectiveAPI}
             onChange={(e) => setUsePerspectiveAPI(e.target.checked)}
@@ -90,17 +90,42 @@ const Settings = () => {
         <div>Category filtering service provider</div>
         <div className="ml-auto">
           <select
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+            className="bg-dark-card border text-dark-text text-sm rounded-lg focus:ring-dark-accent focus:border-dark-accent block w-full p-2.5"
             value={categoryFilteringServiceProvider}
             onChange={(e) =>
               setCategoryFilteringServiceProvider(e.target.value)
             }
           >
-            <option value="">Select a provider</option>
-            <option value="TextRazor">TextRazor</option>
-            <option value="InterfaceAPI">InterfaceAPI</option>
-            <option value="ClassifierAPI">ClassifierAPI</option>
-            <option value="disabled">Disabled</option>
+            <option
+              className="bg-dark-card text-dark-text"
+              value=""
+            >
+              Select a provider
+            </option>
+            <option
+              className="bg-dark-card text-dark-text"
+              value="TextRazor"
+            >
+              TextRazor
+            </option>
+            <option
+              className="bg-dark-card text-dark-text"
+              value="InterfaceAPI"
+            >
+              InterfaceAPI
+            </option>
+            <option
+              className="bg-dark-card text-dark-text"
+              value="ClassifierAPI"
+            >
+              ClassifierAPI
+            </option>
+            <option
+              className="bg-dark-background text-dark-text"
+              value="disabled"
+            >
+              Disabled
+            </option>
           </select>
         </div>
       </div>
@@ -109,7 +134,7 @@ const Settings = () => {
         <div>Category filtering request timeout (ms)</div>
         <div className="ml-auto">
           <input
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+            className="bg-dark-background border text-dark-text text-sm rounded-lg focus:ring-dark-accent focus:border-dark-accent block w-full p-2.5"
             type="number"
             value={categoryFilteringRequestTimeout}
             min={0}
@@ -124,7 +149,7 @@ const Settings = () => {
 
       <div className="flex justify-end">
         <button
-          className="bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50"
+          className="bg-dark-primary text-dark-background px-4 py-2 rounded disabled:opacity-50"
           onClick={handleUpdate}
           disabled={isUpdating}
         >

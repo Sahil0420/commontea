@@ -97,7 +97,7 @@ const OwnProfileCard = ({ user }) => {
 
       <span className="mt-3 flex flex-col items-center justify-center border-t">
         <Link
-          className="mt-3 cursor-pointer text-primary hover:underline"
+          className="mt-3 cursor-pointer text-blue-800 hover:underline"
           to="/devices-locations"
         >
           Manage Devices and Locations

@@ -6,7 +6,7 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import Post from "../post/Post";
 import CommonLoading from "../loader/CommonLoading";
-import Home from "../../assets/home.jpg";
+import Home from "../../assets/Home.png";
 
 const MemoizedPost = memo(Post);
 

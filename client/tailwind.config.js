@@ -45,6 +45,14 @@ module.exports = {
           800: "#0e4bff",
           900: "#0000ff",
         },
+        dark: {
+          background: "#ffffff",
+          card: "#ffffff",
+          primary: "#000000",
+          accent: "#000000",
+          text: "#000000",
+          muted: "#000000"
+        },
       },
     },
   },

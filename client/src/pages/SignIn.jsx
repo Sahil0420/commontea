@@ -46,7 +46,7 @@ const SignIn = () => {
       <div className="container mx-auto flex min-h-screen flex-col items-center justify-center px-6">
         <form className="w-full max-w-md">
           <div className="mx-auto flex justify-center">
-            <img className="h-7 w-auto sm:h-8" src={Logo} alt="" />
+            <img className="h-7 w-auto sm:h-8" src={Logo} alt=""/>
           </div>
           {signInError && (
             <div
@@ -157,7 +157,7 @@ const SignIn = () => {
             <button
               disabled={loading}
               onClick={handleSubmit}
-              className={`w-full transform rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium tracking-wide text-white transition-colors duration-300 hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 ${
+              className={`w-full transform rounded-lg bg-dark-text px-6 py-3 text-sm font-medium tracking-wide text-white transition-colors duration-300 hover:bg-slate-800 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 ${
                 loading ? "cursor-not-allowed opacity-50" : ""
               }`}
             >
@@ -174,14 +174,14 @@ const SignIn = () => {
             href="https://github.com/nz-m/SocialEcho"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center hover:text-blue-500"
+            className="flex items-center hover:text-slate-800"
           >
             <AiFillGithub className="mr-2 h-5 w-5" />
             <span>GitHub</span>
           </a>
           <Link
             to="/admin"
-            className="ml-8 flex items-center hover:text-blue-500"
+            className="ml-8 flex items-center hover:text-slate-800"
           >
             <MdOutlineAdminPanelSettings className="mr-2 h-5 w-5" />
             <span>Admin</span>

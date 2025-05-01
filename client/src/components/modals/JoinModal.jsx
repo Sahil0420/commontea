@@ -68,12 +68,12 @@ const JoinModal = memo(({ show, onClose, community }) => {
               <Dialog.Panel className="flex w-full max-w-md transform flex-col items-center overflow-hidden rounded-md bg-white p-6 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="h3"
-                  className="flex items-center gap-2 text-xl font-medium leading-6 text-primary"
+                  className="flex items-center gap-2 text-xl font-medium leading-6 text-dark-textbg-dark-text"
                 >
-                  <IoIosPeople className="text-base text-primary md:text-xl" />
+                  <IoIosPeople className="text-base text-dark-textbg-dark-text md:text-xl" />
                   <div className="relative">
                     {community.name}
-                    <p className="absolute -right-4 -top-3 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs text-white">
+                    <p className="absolute -right-4 -top-3 flex h-5 w-5 items-center justify-center rounded-full bg-dark-text text-xs text-white">
                       {community.members.length}
                     </p>
                   </div>
@@ -100,8 +100,8 @@ const JoinModal = memo(({ show, onClose, community }) => {
                     type="button"
                     className={`inline-flex justify-center rounded-md border px-4 py-2 text-sm font-medium ${
                       loading
-                        ? "cursor-not-allowed bg-blue-500 text-white"
-                        : "border-transparent bg-blue-500 text-white hover:bg-blue-600"
+                        ? "cursor-not-allowed bg-dark-text text-white"
+                        : "border-transparent bg-dark-text text-white hover:bg-dark-text"
                     } focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2`}
                     onClick={() => joinCommunityHandler(community.name)}
                   >

@@ -31,9 +31,9 @@ const CommunityCard = ({ community }) => {
       <div className="">
         <button
           onClick={() => toggleJoinModal(community._id, true)}
-          className="px-2.5 py-2.5 bg-primary shadow-2xl shadow-[#F3F8FF] hover:bg-transparent group hover:border rounded-xl hover:border-primary transition duration-300"
+          className="px-2.5 py-2.5 bg-dark-text shadow-2xl shadow-[#F3F8FF] hover:bg-transparent group hover:border rounded-xl hover:border-dark-text transition duration-300"
         >
-          <MdOutlineGroupAdd className="text-lg text-white group-hover:text-primary" />
+          <MdOutlineGroupAdd className="text-lg text-white group-hover:text-dark-text" />
         </button>
         <JoinModal
           show={joinModalVisibility[community._id] || false}

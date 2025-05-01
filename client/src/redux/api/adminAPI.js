@@ -1,4 +1,5 @@
 import { ADMIN_API, handleApiError } from "./utils";
+import axios from "axios";
 
 export const signIn = async (credential) => {
   try {
@@ -21,6 +22,23 @@ export const getServicePreferences = async () => {
 export const updateServicePreferences = async (preferences) => {
   try {
     await ADMIN_API.put("/preferences", preferences);
+  } catch (error) {
+    return handleApiError(error);
+  }
+};
+
+export const addCommunity = async (communityData) => {
+  try {
+    const res = await ADMIN_API.post("/community", communityData);
+    return { error: null, data: res.data };
+  } catch (error) {
+    return handleApiError(error);
+  }
+};
+
+export const deleteCommunity = async (communityId) => {
+  try {
+    await ADMIN_API.delete(`/community/${communityId}`);
   } catch (error) {
     return handleApiError(error);
   }

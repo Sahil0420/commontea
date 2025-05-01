@@ -38,7 +38,7 @@ const Logs = () => {
     try {
       setLoading(true);
       await fetchLogs();
-    } catch (error) {}
+    } catch (error) { }
   };
 
   useEffect(() => {
@@ -48,33 +48,32 @@ const Logs = () => {
 
   if (loading || !logs) {
     return (
-      <div className="flex items-center justify-center mt-5">
+      <div className="flex items-center justify-center mt-5 text-dark-text">
         <CommonLoading />
       </div>
     );
   }
 
   return (
-    <div className="bg-white flex flex-col items-center justify-center mt-3 rounded-md">
-      <div className="p-4 shadow-md rounded relative xl:min-w-[1200px] lg:min-w-[1000px] md:min-w-[800px]">
+    <div className="bg-dark-background flex flex-col items-center justify-center mt-3 rounded-md text-dark-text">
+      <div className="p-4 shadow-md rounded border border-dark-card bg-dark-surface relative xl:min-w-[1200px] lg:min-w-[1000px] md:min-w-[800px]">
         <div className="flex items-center justify-between mb-4">
-          <h1 className="text-2xl font-bold text-gray-800">
+          <h1 className="text-2xl font-bold text-dark-accent">
             User Activity Logs
           </h1>
           <CurrentTime />
         </div>
 
-        <div className="flex justify-between items-center mb-4 border-b border-gray-200 pb-2">
-          <div className="text-sm italic text-gray-600">{`Showing ${logs.length} items from the last 7 days`}</div>
+        <div className="flex justify-between items-center mb-4 border-b border-dark-card pb-2">
+          <div className="text-sm italic text-dark-muted">{`Showing ${logs.length} items from the last 7 days`}</div>
 
           <div className="flex items-center space-x-2">
             <button onClick={handleRefresh}>
               <FcRefresh />
             </button>
             <button
-              className={`bg-blue-500 text-white text-sm py-2 px-4 rounded hover:bg-blue-700 ${
-                clearing ? "opacity-50 cursor-not-allowed" : ""
-              } ${logs.length === 0 ? "hidden" : ""}`}
+              className={`bg-dark-primary text-dark-background text-sm py-2 px-4 rounded hover:opacity-90 ${clearing ? "opacity-50 cursor-not-allowed" : ""
+                } ${logs.length === 0 ? "hidden" : ""}`}
               onClick={handleCleanup}
               disabled={clearing || logs.length === 0}
             >
@@ -89,12 +88,12 @@ const Logs = () => {
 
         {!loading ? (
           logs.length === 0 ? (
-            <div className="text-gray-500 text-lg">No logs found</div>
+            <div className="text-dark-muted text-lg">No logs found</div>
           ) : (
             <>
               <div className="h-[430px] relative overflow-auto">
                 <div className="w-full rounded">
-                  <div className="grid grid-cols-5 gap-5 items-center border-b py-2 font-semibold text-gray-800">
+                  <div className="grid grid-cols-5 gap-5 items-center border-b border-dark-card py-2 font-semibold text-dark-accent">
                     <p className="text-center">Timestamp</p>
                     <p>Message</p>
                     <p>Email Used</p>
@@ -104,61 +103,56 @@ const Logs = () => {
                   {logs.map((log) => (
                     <div
                       key={log._id}
-                      className="grid grid-cols-5 gap-5 items-center border-b py-2 text-sm text-gray-700"
+                      className="grid grid-cols-5 gap-5 items-center border-b border-slate-300 py-2 text-sm text-dark-text"
                     >
-                      <span className="flex-col justify-center items-center text-center font-mono">
+                      <span className="flex-col p-0 m-0 gap-0 justify-center items-center text-center font-mono">
                         <p>{log.relativeTimestamp}</p>
-                        <p className="text-xs">{log.formattedTimestamp}</p>
+                        <p className="text-xs text-dark-muted">{log.formattedTimestamp}</p>
                       </span>
                       <td
-                        className={`${
-                          log.level === "info"
-                            ? "text-blue-500"
-                            : log.level === "warn"
-                            ? "text-orange-500"
+                        className={`${log.level === "info"
+                          ? "text-blue-800"
+                          : log.level === "warn"
+                            ? "text-orange-400"
                             : log.level === "error"
-                            ? "text-red-600"
-                            : ""
-                        }`}
+                              ? "text-red-700"
+                              : ""
+                          }`}
                       >
                         <span className="capitalize">{log.type}: </span>
                         <span>{log.message}</span>
                       </td>
                       <p>{log.email}</p>
-                      <td className="">
+                      <td>
                         <span
-                          className={`rounded-full px-2 py-1 text-sm font-semibold ${
-                            log.level === "error"
-                              ? "bg-red-500 text-white"
+                          className={`rounded-md inline-flex justify-center px-2 py-1 min-w-[100px] max-w-[200px] text-sm font-semibold ${log.level === "error"
+                              ? "bg-red-700 text-white"
                               : log.level === "warn"
-                              ? "bg-orange-500 text-white"
-                              : "bg-blue-500 text-white"
-                          }`}
+                                ? "bg-orange-500 text-white"
+                                : "bg-blue-800 text-white"
+                            }`}
                         >
                           {log.level}
                         </span>
                       </td>
-                      <td className="">
-                        <ul className="list-disc list-inside">
+                      <td className="max-h-[5rem] overflow-y-auto pr-2 custom-scrollbar">
+                        <ul className="list-disc list-inside text-sm">
                           {log.contextData &&
-                            Object.entries(log.contextData).map(
-                              ([key, value]) => (
-                                <li key={key}>
-                                  <span className="font-medium text-blue-500">
-                                    {key}:{" "}
-                                  </span>
-                                  {value}
-                                </li>
-                              )
-                            )}
+                            Object.entries(log.contextData).map(([key, value]) => (
+                              <li key={key}>
+                                <span className="font-medium text-blue-800">{key}:</span>{" "}
+                                {value}
+                              </li>
+                            ))}
                         </ul>
                       </td>
+
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="flex justify-center text-sm italic text-gray-600 mt-2">
+              <div className="flex justify-center text-sm italic text-dark-muted mt-2">
                 logs are automatically deleted after 7 days
               </div>
             </>

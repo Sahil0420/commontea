@@ -23,7 +23,7 @@ const CurrentTime = () => {
   const timeString = `${hours}:${minutes}:${seconds} ${amPm}`;
 
   return (
-    <div className="text-sm text-gray-800 mt-1">
+    <div className="text-sm text-dark-muted mt-1">
       {`${weekday}, ${month} ${day}, ${year} ${timeString}`}
     </div>
   );

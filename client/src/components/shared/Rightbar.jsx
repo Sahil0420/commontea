@@ -83,11 +83,11 @@ const Rightbar = () => {
             <h5 className="font-semibold text-sm">Suggested Communities</h5>
             {remainingCount > 0 && (
               <Link
-                className="flex relative items-center text-sm font-medium text-primary mr-4"
+                className="flex relative items-center text-sm font-medium text-dark-text mr-4"
                 to="/communities"
               >
                 See all
-                <p className="absolute -top-2 -right-4 text-white text-xs bg-primary w-4 h-4 rounded-full flex justify-center items-center">
+                <p className="absolute -top-2 -right-4 text-white text-xs bg-dark-text w-4 h-4 rounded-full flex justify-center items-center">
                   {" "}
                   {remainingCount}
                 </p>
@@ -124,8 +124,8 @@ const Rightbar = () => {
 
                 <button
                   onClick={() => toggleJoinModal(community._id, true)}
-                  className="text-primary border border-dashed border-blue-500
-                        hover:bg-primary 
+                  className="text-dark-text border border-dashed border-blue-500
+                        hover:bg-dark-text 
                          rounded-md py-1 px-2 text-sm font-semibold group transition duration-300"
                 >
                   <p className="group-hover:text-white flex items-center gap-2">
@@ -180,7 +180,7 @@ const Rightbar = () => {
               <button
                 disabled={followLoading[user._id]}
                 onClick={() => followUserHandler(user._id)}
-                className="text-primary border border-dashed border-blue-500 hover:bg-primary rounded-md py-1 px-2 text-sm font-semibold group transition duration-300"
+                className="text-dark-text border border-dashed border-blue-500 hover:bg-dark-text rounded-md py-1 px-2 text-sm font-semibold group transition duration-300"
               >
                 {followLoading[user._id] ? (
                   <div className="group-hover:text-white flex items-center gap-2 justify-center">

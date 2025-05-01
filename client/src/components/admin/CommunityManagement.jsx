@@ -41,17 +41,17 @@ const CommunityManagement = () => {
   }
 
   return (
-    <div className="flex gap-2 h-[85vh] w-full mt-3 border rounded-md">
+    <div className="flex gap-2 h-[85vh] w-full mt-3 border rounded-md bg-dark-background">
       {/* Left column */}
-      <div className="flex flex-col w-full bg-white shadow-inner rounded-md border-r">
-        <h1 className="text-lg font-bold p-4 text-center border-b-2">
+      <div className="flex flex-col w-full bg-dark-background shadow-inner rounded-md border-r">
+        <h1 className="text-lg font-bold p-4 text-center border-b-2 text-dark-accent">
           Communities
         </h1>
         <div className="flex flex-col overflow-y-auto">
           {communities.map((community) => (
             <div
               key={community._id}
-              className="p-4 cursor-pointer hover:bg-background border-b flex items-center justify-between"
+              className="p-4 cursor-pointer hover:bg-dark-card border-b flex items-center justify-between text-dark-text"
             >
               <div className="flex items-center">
                 <img
@@ -59,9 +59,7 @@ const CommunityManagement = () => {
                   alt={community.name}
                   className="w-10 h-10 rounded-full mr-2 md:mr-4"
                 />
-                <span className="text-gray-700 text-xs md:text-base">
-                  {community.name}
-                </span>
+                <span className="text-xs md:text-base">{community.name}</span>
               </div>
               <button
                 disabled={isUpdating}
@@ -76,15 +74,15 @@ const CommunityManagement = () => {
       </div>
 
       {/* Right column */}
-      <div className="flex flex-col w-full bg-white rounded-md px-5 py-5 border-l">
-        <h1 className="font-bold text-lg border-b border-black pb-1 mb-2">
+      <div className="flex flex-col w-full bg-dark-background rounded-md px-5 py-5 border-l">
+        <h1 className="font-bold text-lg border-b border-black pb-1 mb-2 text-dark-accent">
           Add New Community
         </h1>
         <div className="flex flex-col gap-4">
           <input
             type="text"
             placeholder="Community Name"
-            className="p-2 border rounded"
+            className="p-2 border rounded bg-dark-card text-dark-background"
             value={newCommunity.name}
             onChange={(e) =>
               setNewCommunity({ ...newCommunity, name: e.target.value })
@@ -92,7 +90,7 @@ const CommunityManagement = () => {
           />
           <textarea
             placeholder="Community Description"
-            className="p-2 border rounded"
+            className="p-2 border rounded  bg-dark-card text-dark-background"
             value={newCommunity.description}
             onChange={(e) =>
               setNewCommunity({ ...newCommunity, description: e.target.value })
@@ -101,7 +99,7 @@ const CommunityManagement = () => {
           <input
             type="text"
             placeholder="Banner URL"
-            className="p-2 border rounded"
+            className="p-2 border rounded  bg-dark-card text-dark-background"
             value={newCommunity.banner}
             onChange={(e) =>
               setNewCommunity({ ...newCommunity, banner: e.target.value })
@@ -111,7 +109,7 @@ const CommunityManagement = () => {
             disabled={
               !newCommunity.name || !newCommunity.description || isUpdating
             }
-            className="p-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+            className="p-2 bg-dark-text text-dark-background rounded hover:bg-accent"
             onClick={handleAddCommunity}
           >
             Add Community

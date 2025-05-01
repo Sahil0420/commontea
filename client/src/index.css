@@ -16,13 +16,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to bottom, #0070ff, #00d2ff, #0070ff);
+  background-image: linear-gradient(to bottom, #1d1d1d, #777777, #1d1d1d);
   border-radius: 10px;
   border: 2px solid #ffff;
 }
 
 body {
-  background-color: #f7fafc;
+  background-color: #ffffff;
 }
 
 .tooltip {
